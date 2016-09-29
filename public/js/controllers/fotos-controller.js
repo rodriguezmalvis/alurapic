@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 angular.module('alurapic').controller('FotosController', function($scope, $http){
 
 	$scope.fotos = [];
@@ -18,5 +19,19 @@ angular.module('alurapic').controller('FotosController', function($scope, $http)
 		console.log(erro);
 	});
 	*/
+=======
+angular.module('alurapic').controller('FotosController',function($scope,$http){
+
+	$scope.fotos = []
+
+	$http.get('/v1/fotos')
+    .success(function(retorno) {
+        console.log(retorno);
+        $scope.fotos = retorno; // não precisa fazer retorno.data
+    })
+    .error(function(erro) {
+        console.log(erro);
+    });
+>>>>>>> df2f1c04c4b143921a026f00bafd8072003165d1
 
 });

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 angular.module('minhasDiretivas', [])
 .directive('meuPainel',function(){
 
@@ -15,3 +16,6 @@ angular.module('minhasDiretivas', [])
 
 	return ddo;
 });
+=======
+angular.module('MinhaDiretivas',[]);
+>>>>>>> df2f1c04c4b143921a026f00bafd8072003165d1
